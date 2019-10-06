@@ -32,8 +32,8 @@
            {
              "datasources": ["maven"],
              "packageNames": ["org.springframework:spring-web"],
-             "matchCurrentVersion": "(,5.0.7)",
-             "allowedVersions": "[5.0.7,)",
+             "matchCurrentVersion": "(,5.0.7.RELEASE)",
+             "allowedVersions": "[5.0.7.RELEASE,)",
              
              "enabled": true,
              "groupName": null,
