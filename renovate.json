@@ -39,6 +39,7 @@
              "groupName": null,
              "schedule": [],
              "masterIssueApproval": false,
+             "vulnerabilityAlert": true,
              "labels": ["security fix"],
              "prBodyNotes": [
                "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/high_vul.png' width=19 height=20></a> High | 7.5 | [CVE-2018-15756](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15756) | Fixes #24 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.9 | [CVE-2018-11040](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11040) | Fixes #23 |\n"
