@@ -1,0 +1,33 @@
+{
+         "vulnerabilityAlerts": {"enabled": false},
+         "suppressNotifications": [
+           "prIgnoreNotification",
+           "prEditNotification",
+           "deprecationWarningIssues"
+         ],
+         "maven": {"enabled": true},
+         "npm": {
+           "prBodyDefinitions": {
+             "Change": "{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}"
+           }
+         },
+         "packageRules": [
+           {"packagePatterns": ["*"], "enabled": false},
+           {
+             "datasources": ["maven"],
+             "packageNames": ["com.fasterxml.jackson.core:jackson-core"],
+             "matchCurrentVersion": "(,2.8.6)",
+             "allowedVersions": "2.8.6",
+             
+             "enabled": true,
+             "groupName": null,
+             "schedule": [],
+             "masterIssueApproval": false,
+             "labels": ["security fix"],
+             "prBodyNotes": [
+               "By merging this MR, the below issues will be automatically resolved and closed:\n\n| Severity           | <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/cvss3.png' width=19 height=20></a> CVSS Score       |CVE  | GitLab Issue |\n| ------------- |-------------|-----|-----|\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.5 | [WS-2018-0125](https://github.com/FasterXML/jackson-core/issues/315) | Fixes #51 |\n| <a href=\"#\"><img src='https://whitesource-resources.whitesourcesoftware.com/medium_vul.png' width=19 height=20></a> Medium | 5.5 | [WS-2018-0124](https://issues.jboss.org/browse/JBEAP-6316) | Fixes #50 |\n"
+             ]
+           }
+         ],
+         "enabledManagers": ["", "maven"]
+       }
