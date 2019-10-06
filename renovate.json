@@ -17,7 +17,7 @@
              "datasources": ["maven"],
              "packageNames": ["com.fasterxml.jackson.core:jackson-core"],
              "matchCurrentVersion": "(,2.8.6)",
-             "allowedVersions": "2.8.6",
+             "allowedVersions": "[2.8.6,)",
              
              "enabled": true,
              "groupName": null,
