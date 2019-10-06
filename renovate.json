@@ -5,6 +5,7 @@
            "prEditNotification",
            "deprecationWarningIssues"
          ],
+         "ignoreUnstable": false,
          "maven": {"enabled": true},
          "npm": {
            "prBodyDefinitions": {
